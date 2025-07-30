@@ -1,0 +1,160 @@
+﻿object FrameAdicionais: TFrameAdicionais
+  Align = Client
+  Size.Width = 355.000000000000000000
+  Size.Height = 86.000000000000000000
+  Size.PlatformDefault = False
+  object a: TRectangle
+    Align = Client
+    Fill.Color = xFF4A70F7
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 66.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lytBotão: TLayout
+      Align = Right
+      HitTest = True
+      Position.X = 250.000000000000000000
+      Size.Width = 85.000000000000000000
+      Size.Height = 66.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Layout1: TLayout
+        Align = Center
+        Size.Width = 70.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btnMenos: TSpeedButton
+          Tag = -1
+          Align = Left
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Trimming = None
+          OnClick = btnMenosClick
+          object Image3: TImage
+            MultiResBitmap.Height = 64
+            MultiResBitmap.Width = 64
+            MultiResBitmap = <
+              item
+                Width = 64
+                Height = 64
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+                  DE0000000473424954080808087C086488000000D849444154789CEDD4B16D02
+                  4010055163434BAE80C81DD0859DB90B12F74041C4D4810412A601C23BBDE066
+                  0AF81A8DB4BBF9FABEFEBF2DCCBB16D014400B680AA0053405D0029A0268014D
+                  01B480A6005A4053002DA0298016D014400B680AA0053405D0029A0268014D01
+                  B48066F900DB99E33F87DD909DE3E93E64E7155303EC3F3F86ECCC0CB0FC0914
+                  400B68960F30F509FEFEDD66CE0F616A80F3E531737E08CB9F4001B480A6005A
+                  4053002DA0298016D014400B680AA0053405D0029A0268014D01B480A6005A40
+                  53002DA0298016D014400B689E1EDB0D9ACDB23CA50000000049454E44AE4260
+                  82}
+                FileName = 'D:\EasyComanda\Assets\menos.png'
+              end>
+            Align = Client
+            Locked = True
+            HitTest = False
+            Size.Width = 25.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object btnMais: TSpeedButton
+          Tag = 1
+          Align = Right
+          Position.X = 45.000000000000000000
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Trimming = None
+          OnClick = btnMaisClick
+          object Image1: TImage
+            MultiResBitmap.Height = 64
+            MultiResBitmap.Width = 64
+            MultiResBitmap = <
+              item
+                Width = 64
+                Height = 64
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+                  DE0000000473424954080808087C0864880000015A49444154789CED99216F02
+                  411406DF522021545520A8032C965F50D1D45557A330C8FE84BA1A1C1EDD54D7
+                  545756833B81A18A904061D1072447931726CD7E23C9724C26B761DF5D7818AE
+                  A2254C8916A051005A80460168011A05A00568148016A051005A80460168011A
+                  05A00568148016A051005A80A64CFC68FFB162ED66C87D36CD76367EFBBDB80B
+                  12A0DD0CD6EDE46F3EEAC96CF25B400168011A05A00568148016A0713D07D46B
+                  C15AB7E1AC75875CD7ECE86C708A59166DE9F83E3778BE1DEE764AF632A87A5D
+                  EE24CFA3B57D4F776ED74B7E0B28002D40937C00D77F815916ED75B2295CF774
+                  5FB6C6CDE1381CEDFDB3781C9EFFF8CE8DAE0196AB681F5FDBC27577BDABA300
+                  E77ED79BE4B78002D002340A400BD028002D40833C169F2FA23516F9038DE788
+                  FB175CC7E1FF48F25B400168011A05A00568148016A051005A80460168011A05
+                  A00568148016A051005A8026F9007B46853DB80F9B5D4C0000000049454E44AE
+                  426082}
+                FileName = 'D:\EasyComanda\Assets\menos.png'
+              end>
+            Align = Client
+            Locked = True
+            HitTest = False
+            Size.Width = 25.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object lblQtd: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Size.Width = 20.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = '3'
+          TabOrder = 2
+        end
+      end
+    end
+    object lyt: TLayout
+      Align = Client
+      Size.Width = 250.000000000000000000
+      Size.Height = 66.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object lblAdicionais: TLabel
+        Align = Top
+        StyledSettings = [Family, Style]
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 242.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        Text = 'Adicional1'
+        TabOrder = 3
+      end
+      object lblValor: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Margins.Left = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 27.000000000000000000
+        Size.Width = 242.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00020000000000000004000000}
+        TextSettings.FontColor = claWhite
+        Text = 'R$15,00'
+        TabOrder = 2
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+object FrameCategoria: TFrameCategoria
+  Size.Width = 264.000000000000000000
+  Size.Height = 62.000000000000000000
+  Size.PlatformDefault = False
+end

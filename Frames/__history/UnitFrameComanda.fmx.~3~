@@ -1,0 +1,17 @@
+object FrameComanda: TFrameComanda
+  Align = Client
+  HitTest = False
+  Size.Width = 314.000000000000000000
+  Size.Height = 56.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF4A70F7
+    Margins.Top = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 314.000000000000000000
+    Size.Height = 46.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+end

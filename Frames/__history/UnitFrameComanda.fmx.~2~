@@ -1,0 +1,5 @@
+object FrameComanda: TFrameComanda
+  Size.Width = 314.000000000000000000
+  Size.Height = 56.000000000000000000
+  Size.PlatformDefault = False
+end

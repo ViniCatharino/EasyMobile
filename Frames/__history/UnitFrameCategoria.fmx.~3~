@@ -1,0 +1,29 @@
+object FrameCategoria: TFrameCategoria
+  Size.Width = 264.000000000000000000
+  Size.Height = 62.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle1: TRectangle
+    Align = Client
+    Cursor = crHandPoint
+    Fill.Color = xFF4A70F7
+    HitTest = False
+    Margins.Top = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 264.000000000000000000
+    Size.Height = 52.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblCategoria: TLabel
+      Align = Client
+      StyledSettings = [Family, Style]
+      Margins.Left = 8.000000000000000000
+      Size.Width = 256.000000000000000000
+      Size.Height = 52.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      Text = 'Bebidas'
+      TabOrder = 2
+    end
+  end
+end

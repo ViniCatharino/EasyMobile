@@ -1,0 +1,44 @@
+object FrameComanda: TFrameComanda
+  Align = Client
+  HitTest = False
+  Size.Width = 314.000000000000000000
+  Size.Height = 56.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF4A70F7
+    HitTest = False
+    Margins.Top = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 314.000000000000000000
+    Size.Height = 46.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblValor: TLabel
+      Align = Right
+      StyledSettings = [Family, Style]
+      Margins.Right = 8.000000000000000000
+      Position.X = 208.000000000000000000
+      Size.Width = 98.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Trailing
+      Text = '0,00'
+      TabOrder = 3
+    end
+    object lblNome: TLabel
+      Align = Client
+      StyledSettings = [Family, Style]
+      Margins.Left = 8.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      Text = 'Heber'
+      TabOrder = 2
+    end
+  end
+end

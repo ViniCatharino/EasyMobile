@@ -1,0 +1,120 @@
+object Dm: TDm
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
+  Height = 457
+  Width = 665
+  object TabUsuario: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 88
+    Top = 168
+  end
+  object Conn: TFDConnection
+    Params.Strings = (
+      'LockingMode=Normal'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    AfterConnect = ConnAfterConnect
+    BeforeConnect = ConnBeforeConnect
+    Left = 88
+    Top = 32
+  end
+  object qryUsuario: TFDQuery
+    Connection = Conn
+    Left = 192
+    Top = 32
+  end
+  object qryConfig: TFDQuery
+    Connection = Conn
+    Left = 280
+    Top = 32
+  end
+  object TabMesa: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 176
+    Top = 168
+  end
+  object TabComanda: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 256
+    Top = 168
+  end
+  object TabCategoria: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 344
+    Top = 168
+  end
+  object TabProduto: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 88
+    Top = 248
+  end
+  object TabComandaItem: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 176
+    Top = 248
+  end
+  object TabAdicionais: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 280
+    Top = 248
+  end
+  object qryItem: TFDQuery
+    Connection = Conn
+    Left = 352
+    Top = 32
+  end
+  object TabItemAdicional: TFDQuery
+    Connection = Conn
+    SQL.Strings = (
+      '')
+    Left = 376
+    Top = 248
+  end
+  object qryAdicional: TFDQuery
+    Connection = Conn
+    Left = 464
+    Top = 112
+  end
+end

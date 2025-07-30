@@ -1,0 +1,222 @@
+object FrmTransferenciaConsumo: TFrmTransferenciaConsumo
+  Left = 0
+  Top = 0
+  Caption = 'Transferir Consumo'
+  ClientHeight = 530
+  ClientWidth = 330
+  Fill.Color = xFF2C3248
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object rectToolbar: TRectangle
+    Align = Top
+    Fill.Color = xFF2C3248
+    Sides = [Bottom]
+    Size.Width = 330.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family]
+      Size.Width = 330.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Transferir Consumo'
+      TabOrder = 2
+    end
+    object btnFechar: TSpeedButton
+      Align = Left
+      Cursor = crHandPoint
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      OnClick = btnFecharClick
+      object Image2: TImage
+        MultiResBitmap.Height = 64
+        MultiResBitmap.Width = 64
+        MultiResBitmap = <
+          item
+            Width = 64
+            Height = 64
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+              DE0000000473424954080808087C0864880000018749444154789CEDDA314A03
+              4118C5F1371E40110445AB2816362A7807CFE425AC3C81761AB1B7D01B78006B
+              954812958D07F85B6C164232CA46767630BE5F15BEA478EF633664C94A666666
+              6666660D01B6811B600414E3D7BBB973B502D807FACC1A029BB9F325352E3F88
+              94AF5CE4CE984C8DF200BDDC3993A8591EA0C89DB571739407E8E6CEDBA839CB
+              F7814EEECC8DF945F9FDDC991BE3F22EEFF22EEFF22EEFF20B513EC486E33277
+              92D6DA8D93C4A7CA2E272184C7E93767164079CFFE2069237DB6567D483A0821
+              3C4D0E97221F3CD3E29597A45549A7D3C3D80928242DB7912883510861657210
+              3B01B1D9A2607A102B7BDF42905C6EA707B14B604BE597E07A1B895AF426E930
+              84F03C399C390121841749C792862D054B6D24E94A91F23F02F6805ECD1F42EF
+              C051B20AB97809F21224790992BC04495E82242F41929720C94B90F4CFFF1AAB
+              CCB984CBDC799398E37278CD9D35999A4BA87F33F217D5B81CCE73674C8EEF1F
+              921AB0E80F4955800E704DF9885C0174819DDCB9CCCCCCCCCCCC2A5F05D9B57B
+              5015CCDA0000000049454E44AE426082}
+            FileName = 'D:\EasyComanda\Fontes\Mobile\Images\back.png'
+          end>
+        Align = Client
+        Locked = True
+        HitTest = False
+        Size.Width = 40.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object Layout1: TLayout
+    Align = Top
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 70.000000000000000000
+    Size.Width = 290.000000000000000000
+    Size.Height = 89.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Layout2: TLayout
+      Align = Scale
+      Position.X = 3.063388347625732000
+      Position.Y = 3.000000000000000000
+      Size.Width = 100.070533752441400000
+      Size.Height = 83.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label2: TLabel
+        Align = Top
+        StyledSettings = [Family, Style]
+        Size.Width = 100.070533752441400000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        Text = 'Da mesa'
+        TabOrder = 2
+      end
+      object edtOrigem: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.FontColor = xFF7A7A7A
+        Position.Y = 22.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 100.070533752441400000
+        Size.Height = 53.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style]
+      end
+    end
+    object Layout3: TLayout
+      Align = Scale
+      Position.X = 186.866439819335900000
+      Position.Y = 3.000000000000000000
+      Size.Width = 100.070480346679700000
+      Size.Height = 83.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label3: TLabel
+        Align = Top
+        StyledSettings = [Family, Style]
+        Size.Width = 100.070480346679700000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        Text = 'Para a mesa'
+        TabOrder = 2
+      end
+      object edtDestino: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.FontColor = xFF7A7A7A
+        Position.Y = 22.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 100.070480346679700000
+        Size.Height = 53.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style]
+      end
+    end
+    object Image1: TImage
+      MultiResBitmap.Height = 128
+      MultiResBitmap.Width = 128
+      MultiResBitmap = <
+        item
+          Width = 128
+          Height = 128
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000080000000800806000000C33E61
+            CB0000000473424954080808087C086488000002D649444154789CEDDD3F8B94
+            571886F1FBC96A04AB203696E96C141592D66AC1DE15025616826815B1B5B395
+            049BA408760602FE69FC16829686F81544D65EBD2C3662A188B3F39E19DF79AE
+            5FBD73DE3373DF67CE61867D27912449922449922449922449922449D2ECD5BA
+            27B00EC0912417939CCEDE6BF034C9BDAA7AB5D689693C6007D8E553BBC08575
+            CF4F0301DBC09BCF84FFC15BE0D2BAE7A90180029E7F217C4BB0C980935F11BE
+            25D854C0F9050A6009360D7076C10258824D021C065E5B82C6809BFB288025D8
+            14C016F0C01234061C041E5982C62C813E94E0B125680C3864099AFBBF046E07
+            9DE1994096401E0CE5C150B1048A25502C816209144BA05802C512289640B104
+            8A25502C816209144BA05802C512289640B104CA7C4A7060F405804A7222C98F
+            49BE1F7DBD6FCCDF498E2539B3E0E3BE4BF21750557577FA697D34F42E61C076
+            923B498E8FBCCE86BB5D5537460D3EAC00C04E927FB2D7662DE7B7AABA3E62E0
+            2105008E267991E48711E3374492E355F5DFD4038F5A9DBFC4F0A754496E8D18
+            7854017E1A346E678B1E24BF8AFB7373A30AF064D0B89D3D1D31A887C07998D7
+            21B0AA5E26B99CE4DD88F11BFA7D44F8C9C0334055DD4F722EC9BFA3AED1C49D
+            519F01242BF8BD80E61F056F25F935C9CFFB782C49AE55D51FD34E492BC1DEBD
+            061E2EF165D095753F07EDD392E1BF5BD537811A6082F05DF97365F88D2D19BE
+            7BFE9C4DB0F2DDF3E76A82F05DF97365F88D2D19BE7BFE9C4DB0F2DDF3E76A82
+            F05DF97365F88D197E6386DF98E13766F88D197E6386DF98E13766F88DB1DC8F
+            4619FE9C197E6386DF18EEF97D197E63F8B6DF97E137066C010F0CBF29E0A6E1
+            37051C065E1B7E53C059C3FF54A79B441D5DF0EF4972B5AAFE1C3119AD1870D2
+            95DF1850C073C36F0CD806DE7C217CFF6367D3013BC0EE67C2DF052EAC7B7EAB
+            36FC2651DF22E048928B494E65EF357896E45E55BD5AEBC42449922449922449
+            92244992244992A4FD780F1EF193E86AD733C20000000049454E44AE426082}
+          FileName = 'D:\EasyComanda\Fontes\Mobile\Images\seta.png'
+        end>
+      Align = Center
+      Margins.Top = 20.000000000000000000
+    end
+  end
+  object rectSalvar: TRectangle
+    Align = Top
+    Fill.Color = xFF4A70F7
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 169.000000000000000000
+    Size.Width = 290.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object btnConfirmar: TSpeedButton
+      Align = Client
+      Cursor = crHandPoint
+      StyledSettings = [Family]
+      Size.Width = 290.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Confirmar'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.Trimming = None
+      OnClick = btnConfirmarClick
+    end
+  end
+end
