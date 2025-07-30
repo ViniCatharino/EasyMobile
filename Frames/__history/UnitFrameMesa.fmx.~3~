@@ -1,0 +1,6 @@
+object FrameMesa: TFrameMesa
+  HitTest = False
+  Size.Width = 176.000000000000000000
+  Size.Height = 135.000000000000000000
+  Size.PlatformDefault = False
+end
